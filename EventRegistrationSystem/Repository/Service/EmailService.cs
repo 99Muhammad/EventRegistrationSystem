@@ -23,7 +23,7 @@ namespace EventRegistrationSystem.Repository.Service
             var request = new MailjetRequest
             {
                 Resource = Send.Resource,
-            }.Property(Send.FromEmail, "muhammad.Ibraheem.99m@gmail.com").
+            }.Property(Send.FromEmail, "MuhammadIbraheem99m@gmail.com").
              Property(Send.FromName, "Events")
             .Property(Send.HtmlPart, $"<h3>Dear {participantName},</h3><p>You have successfully registered for the event with ID {EventId}.</p><p>Thank you!</p>")
             .Property(Send.To, recipientEmail)
